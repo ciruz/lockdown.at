@@ -13,7 +13,7 @@ const Footer = () => {
 
   useEffect(() => {
     if (isOpen) ReactGA.modalview(`/${content}`);
-  }, [isOpen]);
+  }, [isOpen, content]);
 
   return (
     <>
@@ -31,7 +31,7 @@ const Footer = () => {
               Datenschutz
             </a>
           </li>
-          <li>
+          <li className="text-center">
             <a
               href="https://github.com/ciruz/lockdown.at"
               target="_blank"
@@ -40,6 +40,8 @@ const Footer = () => {
             >
               <Github height={30} width={30} />
             </a>
+            <br />
+            <a href="https://infizierte.at/" target="_blank" rel="noreferrer">Coronavirus Zahlen Österreich</a>
           </li>
           <li>
             <a

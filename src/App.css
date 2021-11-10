@@ -25,6 +25,10 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .app {
   min-height: 100vh;
   height: 100%;
